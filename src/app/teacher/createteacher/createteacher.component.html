@@ -1,0 +1,93 @@
+        
+    <div class="container mt-2">
+        <span class="fw-bold ms-1 mb-4.0 ms-3.0"><h4>Students List</h4></span>
+      <button type="button"class="btn btn-primary float-end mt-0 button me-14">
+        <a class="text-white nav-link" href="/Html/teacherslist.html">Back</a></button>
+    </div>
+        <div class="row mt-5 mb-2">
+            <div class=" col-md-10 col-sm-12 ms-auto me-auto bg-muted">
+                <div class="row">
+                    <input type="hidden" id="new" value="">
+                    <div class="col-md-4">
+                        <input type="text" id="fname" class="form-control form-control-lg mb-1" placeholder="First Name" [(ngModel)]="teacher.fname" [ngModelOptions]="{standalone: true}" />
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="text" id="lname" class="form-control form-control-lg mb-3" placeholder="Last Name" [(ngModel)]="teacher.lname" [ngModelOptions]="{standalone: true}" />
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="text"  id="mobile" class="form-control form-control-lg mb-3" placeholder="Mobile"  [(ngModel)]="teacher.mobile" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" id="email" class="form-control form-control-lg mb-3" placeholder="E-mail" [(ngModel)]="teacher.email" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="text"  id="age"class="form-control form-control-lg mb-3" placeholder="Age" [(ngModel)]="teacher.age:" [ngModelOptions]="{standalone: true}"/>
+                         
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" id="nativeplace" class="form-control form-control-lg mb-3" placeholder="Nativeplace " [(ngModel)]="teacher.nativeplace" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Address"  id="address" class="smDivice"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="">Gender</label>
+                        <div class="radio" id="gender" class="smDivice"><br>
+                           <input type="radio" class="Gender" name="Gender" value="Male"> Male
+                            <label><input type="radio" class="Gender" name="Gender" [(ngModel)]="teacher.Gender" [ngModelOptions]="{standalone: true}"/> value="Female"> Female</label>
+                            <div class="errormessage"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="date" id="dob" class="form-control" name="trip-start" value="1999-10-19" min="2018-01-01"
+                            max="2025-12-31">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><br>  
+                        <input type="text" id="city" class="form-control form-control-lg mb-4" placeholder="city" [(ngModel)]="teacher.city" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                    <div class="col-md-4 "><br>
+                        <input type="text" id="state" class="form-control form-control-lg mb-3" placeholder="state" [(ngModel)]="teacher.state" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                    <div class="col-md-4"><br>
+                        <input type="text" id="country" class="form-control form-control-lg mb-3" placeholder="country" [(ngModel)]="teacher.country" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <select class="form-control"  id="selectlanguage" [(ngModel)]="teacher.language" [ngModelOptions]="{standalone: true}" aria-label="Default select example">
+                        <option selected value="">Select your Language</option>
+                        <option value="1">Tamil</option>
+                        <option value="2">English</option>
+                        <option value="3">Hindi</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" id="selectblood" [(ngModel)]="teacher.bloodgroup" [ngModelOptions]="{standalone: true}" aria-label="Default select example">
+
+                        <option selected value="">Select your bloodgroup</option>
+                        <option value="o">O<sup>-</sup></option>
+                        <option value="A">A<sup>-</sup></option>
+                        <option value="B">B<sup>+</sup></option>
+                    </select>
+                </div>
+            </div><br>
+            <div>
+            <button type="button" class="btn btn-primary  mb-1.0 button ms-3.0"> 
+                <a class="text-white nav-link "id="submit" href="">submit</a></button>
+                <button type="button" id="Submit" class="btn btn-primary float-end mb-10 button ms-13">
+                    <a class="text-white nav-link" id="cancel" href="">cancel</a>
+                </button>
+                </div>
+            </div>  
+        </div>    
+     
+    

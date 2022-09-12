@@ -1,0 +1,49 @@
+<section>
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+                <span class="fw-bold ms-2 ps-3 fs-2"><h3>Students List</h3></span>
+              <button type="button"class="btn btn-primary float-end mt-0 me-3b p-2"><a class="text-white nav-link" routerLink="student/createstudent">+ Add Student</a></button>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-2">
+            <div class="col-lg-16 col-md-16 col-sm-12 ms-auto me-auto bg-muted">
+                <div class="table-responsive">
+                    <table class="m-auto table table-bordered table-hover text-center mb-3">
+                        <thead class="bg-light text-black">
+                            <tr class="thead">
+                                <th scope="col">S.No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Father Name</th>
+                                <th scope="col">DOB</th>
+                                <th scope="col">Class</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody" type="">
+
+                            <tr *ngFor="let students of students">
+                          <td>{{students.id}}</td>
+                          <td>{{students.fname}}</td>
+                          <td>{{students.lname}}</td>
+                          <td>{{students.mobile}}</td>
+                          <td>{{students.email}}</td>
+                          
+
+
+
+
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</section>

@@ -1,0 +1,39 @@
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container mt-2">
+                <div class="d-flex justify-content-between">
+              <span class="fw-bold ms-2 ps-3 fs-2"><h3>Teachers List</h3></span>
+              <button type="button"class="btn btn-primary float-end mt-0 me-3b p-2"><a class="text-white nav-link" routerLink="teacher/createteacher">+ Add Teacher</a></button>
+              
+            </div>
+        </div>
+
+    
+                <div class="table-responsive mt-2">
+                    <table class="m-auto table  table-bordered table-hover text-center mb-3">
+                        <thead class="bg-light text-black">
+                                <thead class="bg-light text-black"></thead>
+                            <tr class="thead">
+                                <th scope="col">S.No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Degree</th>
+                                <th scope="col">DOB</th>
+                                <th scope="col">email</th>
+                            </tr> 
+                        </thead>
+                         <tbody id="tbody" type="">
+                            <tr *ngFor="let teachers of teachers">
+                                <td>{{teachers.id}}</td>
+                                <td>{{teachers.fname}}</td>
+                                <td>{{teachers.lname}}</td>
+                                <td>{{teachers.dob}}</td>
+                                <td>{{teachers.email}}</td>
+
+      
+                        </tbody>
+                    </table>
+    </div>  </div>
+      
+
+
+

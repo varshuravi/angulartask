@@ -1,0 +1,125 @@
+<div class="container">
+        <div class=" d-flex justify-content-between mt-3 mb-4">
+            <span class="fw-bold fs-4 text-lg-start">Create Worker</span>
+         <a class="text-white nav-link btn btn-primary" href="workerlist.html">+ AddWorkers</a>
+        </div>
+     <form>
+
+    <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" id="fname" class="form-control" placeholder="Full name" [(ngModel)]="Worker.fname" [ngModelOptions]="{standalone: true}" id="fullName" class="smDivice">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" id="email" class="form-control" placeholder="Email" [(ngModel)]="Worker.email" [ngModelOptions]="{standalone: true}" id="email" class="smDivice">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" id="Phonenumber" class="form-control" placeholder="Phone number" [(ngModel)]="Worker.phonenumber" [ngModelOptions]="{standalone: true}" id="phoneNumber">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" id="age" class="form-control" id="age" placeholder="Age" [(ngModel)]="Worker.age" [ngModelOptions]="{standalone: true}" class="smDivice">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <select class="form-select" id="job" [(ngModel)]="Worker.job" [ngModelOptions]="{standalone: true}"class="smDivice">
+                        <option value="">job</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Cleaner">Cleaner</option>
+                        <option value="Book seller">Book seller</option>
+                        <option value="Tea master">Tea master</option>
+                        <option value="Cooker">Cooker</option>
+                        <option value="Hotel manager">Hotel manager</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <select class="form-select" id="city" [(ngModel)]="Worker.maritalstatus" [ngModelOptions]="{standalone: true}">
+                        <option value="">Marital status</option>
+                        <option value="Married">Married</option>
+                        <option value="Unmarried">Unmarried</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Didowed">Didowed</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <select class="form-select" id="education" [(ngModel)]="Worker.levelofeducation" [ngModelOptions]="{standalone: true}"class="smDivice">
+                        <option value="">Level of education</option>
+                        <option value="Primary education">Primary education</option>
+                        <option value="Secondary education">Secondary education</option>
+                        <option value="Higher education">Higher education</option>
+                        <option value="Secondary">Seconadry education</option>
+                    </select>
+                </div>  
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="home contactnumber"[(ngModel)]="Worker.homecontactnumber" [ngModelOptions]="{standalone: true}" id="homecontactnumber">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <select class="form-select" id="Experience" [(ngModel)]="Worker.experience" [ngModelOptions]="{standalone: true}"id="experience" class="smDivice"></textarea>>
+                        <option value="">Experience</option>
+                        <option value=" 1 year"> 1 year</option>
+                        <option value=" 10 year"> 10 year</option>
+                        <option value="2 Years before">2 Years before</option>
+                        <option value=" 6 months">6 months</option>
+                        <option value=" 10 months">10 months</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Address"  [(ngModel)]="Worker.address" [ngModelOptions]="{standalone: true}"id="address" class="smDivice"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label class="">Gender</label>
+                <div class="radio" id="radio" class="smDivice"><br>
+                   <input type="radio" class="Gender" name="Gender" [(ngModel)]="Worker.gender" [ngModelOptions]="{standalone: true}" value="Male"> Male
+                    <label><input type="radio" class="Gender" name="Gender" value="Female"> Female</label>
+                    <div class="errormessage"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label class="">language</label>
+                <div class="checkbox" id="language" [(ngModel)]="Worker.language" [ngModelOptions]="{standalone: true}"><br>
+                    <label><input type="checkbox" class="language" value="Tamil"> Tamil</label>
+                    <label><input type="checkbox" class="language" value="English"> English</label>
+                    <label><input type="checkbox" class="language" value="Malayalam"> Malayalam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkbox" class="smDivice" id="checkbox-content">
+            <label>
+                <input id="news" type="checkbox" value=""> If informatios all true select the checkbox
+            </label>
+        </div>
+        <div class="d-flex justify-content-end gap-5">
+            <button type="button" class="btn btn-primary mb-3 float-end px-4">Cancel</button>
+            <button type="button" class="btn btn-primary mb-3 float-end px-4" id="createWorker">Submit</button>
+        </div>
+    </form>
+</div>
+
+

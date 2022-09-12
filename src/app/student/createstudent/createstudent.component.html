@@ -1,0 +1,120 @@
+
+    <div class="container mt-2">
+    <span class="fw-bold ms-2 ps-10 fs-15"><h3>Students List</h3></span>
+  <button type="button"class="btn btn-primary float-end mt-1 button me-10">
+    <a class="text-white nav-link" href="studentlist.html">+ List  Student</a></button>
+</div>
+    <div class="row mt-5 mb-2">
+        <div class=" col-md-10 col-sm-12 ms-auto me-auto bg-muted">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" id="fname" class="form-control form-control-lg mb-1" placeholder="First Name" [(ngModel)]="student.fname" [ngModelOptions]="{standalone: true}" />
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" id="lname" class="form-control form-control-lg mb-3" placeholder="Last Name" [(ngModel)]="student.lname" [ngModelOptions]="{standalone: true}"/>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" id="mobile" class="form-control form-control-lg mb-3" placeholder="Mobile" [(ngModel)]="student.mobile" [ngModelOptions]="{standalone: true}" />
+                </div>
+              
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" id="email" class="form-control form-control-lg mb-3" placeholder="E-mail"  [(ngModel)]="student.email" [ngModelOptions]="{standalone: true}"/>
+                </div>
+                <div class="col-md-4 ">
+                    <input type="text" id="password" class="form-control form-control-lg mb-3" placeholder="Password"  [(ngModel)]="student.password" [ngModelOptions]="{standalone: true}"/>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="standard" class="form-control form-control-lg mb-3" placeholder="Standard " [(ngModel)]="student.standard" [ngModelOptions]="{standalone: true}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Address" [(ngModel)]="student.address" [ngModelOptions]="{standalone: true}"id="address" class="smDivice"></textarea>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <label class="">Gender</label>
+                    <div class="radio" id="radio" class="smDivice" [(ngModel)]="student.Gender" [ngModelOptions]="{standalone: true}"><br>
+                       <input type="radio" class="Gender" name="Gender" value="Male"> Male
+                        <label><input type="radio" class="Gender" name="Gender" value="Female"> Female</label>
+                        <div class="errormessage"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" id="start" id="dob" class="form-control" name="trip-start" value="1999-10-19" min="2018-01-01"
+                        max="2025-12-31">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><br>  
+                    <input type="text" id="city" class="form-control form-control-lg mb-4" placeholder="City"  [(ngModel)]="student.city" [ngModelOptions]="{standalone: true}"/>
+                </div>
+                <div class="col-md-4 "><br>
+                    <input type="text"  id="state" class="form-control form-control-lg mb-3" placeholder="State"  [(ngModel)]="student.state" [ngModelOptions]="{standalone: true}"/>
+                </div>
+                <div class="col-md-4"><br>
+                    <input type="text" id="country" class="form-control form-control-lg mb-3" placeholder="Country" [(ngModel)]="student.country" [ngModelOptions]="{standalone: true}"/>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-4">
+                <select class="form-control" id="selectlanguage" [(ngModel)]="student.language" [ngModelOptions]="{standalone: true}"aria-label="Default select example">
+                    <option selected value="">Select your Language</option>
+                    <option value="1">Tamil</option>
+                    <option value="2">English</option>
+                    <option value="3">Hindi</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-control"id="selectblood" [(ngModel)]="student.bloodgroup" [ngModelOptions]="{standalone: true}"  aria-label="Default select example">
+
+                    <option selected value="">Select your bloodgroup</option>
+                    <option value="o">O<sup>-</sup></option>
+                    <option value="A">A<sup>-</sup></option>
+                    <option value="B">B<sup>+</sup></option>
+                </select>
+            </div>
+           
+        </div>
+        <table class="table">
+            <b><br>
+                <div>Qualification</div>
+            </b>
+            
+      <div class="col-lg-10 col-md-10 col-sm-12 ms-auto me-auto bg-muted">
+        <div class="table-responsive">
+            <table class="m-auto table table-bordered table-hover text-center mb-3">
+                <thead class="bg-white text-black">
+                    <tr class="thead">
+                    <th scope="col">S.No</th>
+                    <th scope="col">Examination</th>
+                    <th scope="col">Board</th>
+                    <th scope="col">Percentage</th>
+                    <th scope="col">Year of Passing</th>
+                        
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>

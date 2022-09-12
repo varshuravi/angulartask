@@ -1,0 +1,27 @@
+
+<input type="text" placeholder="Name"><br>
+<input type="text" placeholder="Father name"><br>
+<input type="text" placeholder="Email"><br>
+<button></button>
+<div class="row mt-2 mb-1 ">
+    <div class="col-lg-13 col-md-15 col-sm-14 bms-auto me-auto bg-light">
+        <div class="table-responsive">
+            <table class="m-auto table table-bordered table-hover text-center mb-3">
+                <thead class="bg-light text-black">
+                    <tr class="thead">
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">bloodgroup</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody" type="">
+                    <tr *ngFor="let user of users">
+                        <td>{{user.name}}</td>
+                        <td>{{user.age}}</td>
+                        <td>{{user.bloodgroup}}</td>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
